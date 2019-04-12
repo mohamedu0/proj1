@@ -1,33 +1,128 @@
-/* Hello World program */
-
-#include<stdio.h>
-
 #include <stdio.h>
-int e(int x);
-int e(char c);
+char e (char x);
 
-int main()
+ 
+char d (char c);
+
+ 
+ 
+int 
+main () 
 {
-   int k;
-   char m,c;
+  
+ 
+int k;
+  
+int n = 0;
+  
+char m, c, x, ch;
+  ch = m;
+ printf
+    ("if you want to encript please enter 1\n if you want to decript enter 2\n ");
+  
+scanf ("%d", &n);
+  
+printf ("please enter text:\n");
+  
+ 
+scanf ("%c", &ch);
+  
 
-    return 0;
-} 
-
-int e(int x){
-    char m;
-    x = 26;
-    e[x] = {a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z};
-    e[x] = (m + k)*(% 26);
-    return e;
+ 
+ 
+printf ("please enter key\n");
+  
+ 
+scanf ("%d", &k);
+  
+if (n = 1)
+    {
+      
+m = e (x);
+      
+ 
+printf ("%c", m);
+    }
+  
+  else if (n = 2)
+    {
+      
+m = d (x);
+      
+printf ("%c", m);
     
 }
-
-int e(int c){
-    char c;
-    c = 26
-    e[c] = {a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z};
-    e[c] = (c - k)*(% 26);
-    return e;   
-} 
+  
+  else
+    {
+      
+printf ("enter a number");
     
+}
+  
+ 
+return 0;
+
+ 
+}
+
+
+ 
+ 
+ 
+char 
+e (char x) 
+{
+  
+ 
+ 
+char m;
+  
+ 
+int k;
+  
+ 
+ 
+ 
+char e[26] = "this is a sting";
+  
+ 
+e[m] = m + k;
+  
+ 
+return m;
+
+ 
+ 
+}
+
+
+ 
+ 
+ 
+char
+d (char x) 
+{
+  
+ 
+int k;
+  
+ 
+char c;
+  
+ 
+ 
+char d[26] = "this is a sting";
+  
+ 
+d[c] = (c - k);
+  
+ 
+return c;
+
+ 
+}
+
+
+ 
+ 
