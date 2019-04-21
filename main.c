@@ -5,27 +5,30 @@
 int 
 main () 
 {
-  
+ FILE *input;
+ FILE *output;
  
 char msg[1024],code;
 int key , i;
-  
- printf("what is the word\n");
-    scanf("%s", &msg);
+  input = fopen("input.txt","r");
+  output = fopen("output.txt", "w");
+  fscanf(input,"%s",&msg);
+ //printf("what is the word\n");
+  //  scanf("%s", &msg);
   
 
  
  
-printf ("please enter key\n");
+//printf ("please enter key\n");
   
  
-scanf ("%d", &key);
+//scanf ("%d", &key);
   
 
     code = enrotationcipher(msg, key);
     code = msg;
       
-  printf("new text is :%s\n",msg);
+ fprintf(output,"%s",msg);
     
 
   
