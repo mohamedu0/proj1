@@ -21,13 +21,13 @@ printf("1) encript\n 2)decript\n");
 scanf("%d",&n);
  while (feof(input)== 0){
  
- if(n = 1){
+ if(n == 1){
     fscanf(input,"%s\n", &msg);
     fscanf(filekey,"%d", &key);
     code = enrotationcipher(msg, key);
     code = msg;
   }
-  else if (n = 2){
+  else if (n == 2){
       fscanf(input,"%s\n", &msg);
     fscanf(filekey,"%d", &key);
     code = decribtioncipher(msg,key);
