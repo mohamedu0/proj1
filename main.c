@@ -33,11 +33,16 @@ scanf("%d",&n);
     code = decribtioncipher(msg,key);
     code = msg;
   }
-
-  
+  else if(n==3){
+for(key =0;key<26;key++){
+      fscanf(input,"%s\n", &msg);
+    code = enrotationcipher(msg, key);
+    code = msg;
+}
+  }
     
 }
-  fprintf(output,"%s\n ",msg);
+  printf("%s\n ",msg);
  fprintf(output,"the key: %d",key);
 return 0;
 
