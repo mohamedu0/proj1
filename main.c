@@ -34,6 +34,7 @@ scanf("%d",&n);
     fscanf(filekey,"%d", &key);
     code = decribtioncipher(msg,key);
     code = msg;
+    
   }
 /* else if(n==3){
 key = 0    ;
