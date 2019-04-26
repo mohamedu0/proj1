@@ -65,6 +65,7 @@ return 0;
 char enrotationcipher(char* msg[1024], int key){
   char code;
   int i;
+  
   msg[1024] = "this is a string";
   for (i = 0; msg[i] != '\0'; ++i){
    code = msg[i];
