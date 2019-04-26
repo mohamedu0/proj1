@@ -1,8 +1,9 @@
 #include <stdio.h>
-
- char enrotationcipher(char* msg[1024], int key);
- char decribtioncipher(char* msg[1024], int key);
- 
+/* this coude id ude to encrypt and decrypt useing the */
+ char *enrotationcipher(char *msg[1024], int key); 
+ char *decribtioncipher(char *msg[1024], int key);
+ char *enrotationsubst(char *msg, char code[]);
+ char *decribtionsubst(char *msg, char code[]);
 int 
 main () 
 {
@@ -36,23 +37,17 @@ scanf("%d",&n);
     code = msg;
     
   }
-/* else if(n==3){
-key = 0    ;
-while(count<26){
-
-key = key + 1;
-    code = decribtioncipher(msg, key);
+ else if(n==3){
+ fscanf(input,"%s\n", &msg);
+ code =enrotationsubst(msg,code[]);
     code = msg;
-  
-
-fprintf(output,"the key: %d   ",key);
- fprintf(output,"%s\n",msg);
- 
- 
- count++;
-
 }
-}*/
+else if(n==4){
+    scanf(input,"%s\n", &msg);
+ code = decribtionsubst(msg,code[]);
+    code = msg;
+}
+}
 
   }
     
@@ -126,3 +121,34 @@ char decribtioncipher(char* msg[1024], int key){
     
   return code;
  }
+ 
+
+
+char *enrotationsubst(char *msg, char code[]){
+ char code[26] = {'b','a','c','d','s','f','g','h','i','j','k','l','m','n','o','p','q','r','e','t','u','v','w','x','y','z'};
+int length = "length of sting";
+for(int i = 0; i < length; i++){
+    int  l = msg[i] ;
+    if(l >= 0 && l < 26){
+   msg = code
+}
+
+    
+  }
+  return code;
+}
+char *decribtionsubst(char *msg, char code[]){
+ char code[26] = {'b','a','c','d','s','f','g','h','i','j','k','l','m','n','o','p','q','r','e','t','u','v','w','x','y','z'};
+int length = "length of sting";
+for(int i = 0; i < length; i++){
+    int  l = msg[i] ;
+    if(l >= 0 && l < 26){
+   msg = code
+}
+
+    
+  }
+  return code;
+}
+ 
+ 
