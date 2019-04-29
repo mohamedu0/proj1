@@ -58,8 +58,7 @@ scanf("%d",&n); // takes the number used by the user to use the function using t
 
   fprintf(output,"%s\n ",msg); //prints the enctypted or decrypted text on the file output.txt
 
-return 0;
- 
+return 0; 
 }
 
 
